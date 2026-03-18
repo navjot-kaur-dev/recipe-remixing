@@ -1,0 +1,85 @@
+.card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  display: block;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+.imgWrap {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.emoji { font-size: 68px; line-height: 1; }
+.recipeImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badgePill {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 0.68rem;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.bookmarkBtn {
+  position: absolute;
+  top: 12px; left: 12px;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--text3);
+  transition: transform 0.2s, color 0.2s;
+}
+.bookmarkBtn:hover { transform: scale(1.15); }
+.bookmarkBtn.saved { color: var(--accent); }
+
+.body { padding: 1.1rem; }
+.tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 0.55rem; }
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+.author { font-size: 0.78rem; color: var(--text3); margin-bottom: 0.75rem; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 0.65rem;
+}
+.footerLeft { display: flex; gap: 12px; }
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--text3);
+}
+.rating { display: flex; align-items: center; gap: 3px; }
+.ratingNum { font-size: 0.75rem; color: var(--text3); }

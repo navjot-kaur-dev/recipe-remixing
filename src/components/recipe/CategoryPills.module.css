@@ -1,0 +1,21 @@
+.wrap {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.pill {
+  padding: 8px 18px;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--bg2);
+  color: var(--text2);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+.pill:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+.pill.active { background: var(--accent); color: #fff; border-color: transparent; }
